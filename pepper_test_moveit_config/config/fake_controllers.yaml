@@ -1,0 +1,30 @@
+controller_list:
+  - name: fake_base_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - WheelB
+      - WheelFL
+      - WheelFR
+  - name: fake_LeftArm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+      - LHand
+  - name: fake_RightArm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+      - RHand
+initial:  # Define initial robot poses per group
+#  - group: base
+#    pose: home
+
+  []

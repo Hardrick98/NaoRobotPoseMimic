@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="pepper_vision" type="rgb.py" name="rgb_node" output="screen"/>
+    <node pkg="pepper_vision" type="depth.py" name="depth_node" output="screen"/>
+</launch>
+
