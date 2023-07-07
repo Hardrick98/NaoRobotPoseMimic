@@ -1,0 +1,52 @@
+controller_list:
+  - name: fake_right_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+  - name: fake_left_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+  - name: fake_both_arms_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+  - name: fake_right_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - RHand
+  - name: fake_left_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - LHand
+  - name: fake_base_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+  - name: fake_head_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - HeadYaw
+      - HeadPitch
+initial:  # Define initial robot poses per group
+#  - group: right_arm
+#    pose: home
+
+  []
