@@ -1,0 +1,29 @@
+pepper_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints:
+
+    - HeadPitch
+    - HeadYaw
+    - LShoulderPitch
+    - LShoulderRoll
+    - LElbowRoll
+    - LWristYaw
+    - LHand
+    - RShoulderPitch
+    - RShoulderRoll
+    - RElbowYaw
+    - RElbowRoll
+    - RWristYaw
+    - RHand
+    - HipRoll
+    - HipPitch
+    - KneePitch
+    
+  
+  type: "effort_controllers/JointGroupEffortController"
+  joints:
+
+    - WheelFL
+    - WheelFR
+    - WheelB
+  
