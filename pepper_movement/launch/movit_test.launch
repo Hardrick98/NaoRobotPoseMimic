@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="pepper_movement" type="trajectory.py" name="pepper_movit_node" output="screen"/>
-</launch>
