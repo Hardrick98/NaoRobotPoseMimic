@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="pepper_vision" type="stereo.py" name="stereo_node" output="screen"/>
-</launch>
