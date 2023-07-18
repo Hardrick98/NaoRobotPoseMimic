@@ -1,11 +1,13 @@
 # NaoRobotPoseMimic
 
 ## To activate Simulation
+```
 roslaunch nao_moveit_config demo_gazebo.launch
-
+```
 ## To send Trajectory
+```
 roslaunch nao_trajectory trajectory.launch (cambiare il valori all'interno del file)
-
+```
 ## PROSSIMI STEP
 
 Al momento possiamo calcolare gli angoli tra alcuni link tramite la pose estimation di un immagine 2D, che ovviamente non è esaustiva. Servirà una pose Estimation 3D per calcolare tutti gli angoli.
