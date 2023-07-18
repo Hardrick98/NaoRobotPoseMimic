@@ -11,7 +11,7 @@ roslaunch nao_trajectory trajectory.launch (cambiare il valori all'interno del f
 Al momento possiamo calcolare gli angoli tra alcuni link tramite la pose estimation di un immagine 2D, che ovviamente non è esaustiva. Servirà una pose Estimation 3D per calcolare tutti gli angoli.
 
 ### Step 1
-Pose 3D
+Pose 3D (ci lavoro io)
 
 ### Step 2
 Creare nodo che fa la Pose 3D e pubblica in output i valori degli angoli dei vari joints
