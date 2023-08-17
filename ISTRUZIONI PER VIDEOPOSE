@@ -1,0 +1,12 @@
+creare su home una cartella poses/ e una samples/
+Nella samples mettere un video.mp4 con una sola persona.
+
+cd VideoPose3D
+cd inference
+python infer_video_d2.py --cfg COCO-Keypoints/keypoint_rcnn_R_101_FPN_3x.yaml --output-dir /home/rick/poses --image-ext mp4 /home/rick/samples
+cd..
+cd data
+python prepare_data_2d_custom.py -i /home/rick/poses/ -o video
+cd..
+python run.py -d custom -k video.mp4 -arc 3,3,3,3,3 -c checkpoint --evaluate pretrained_h36m_detectron_coco.bin --render --viz-subject video --viz-action custom --viz-camera 0 --viz-video /home/rick/samples/video.mp4 --viz-output video_pose.mp4 --viz-size 6
+
