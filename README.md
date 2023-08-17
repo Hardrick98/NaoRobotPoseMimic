@@ -1,6 +1,6 @@
 # NaoRobotPoseMimic
 
-Devo ancora aggiornare la cartella del Robot.
+Devo ancora aggiornare la cartella del Robot. Devo anche caricare il file Istruzioni qui.
 
 ## Link per VideoPose3D
 
@@ -21,10 +21,3 @@ roslaunch nao_trajectory trajectory.launch
 
 ### Fare il tutto in RealTime con WebCam
 ### Risolvere Problema Controllo
-
-### Step 3
-Creare un nodo trajectory per ogni move_group e dargli in input i valori corrispondenti del nodo precedente
-
-### Step 4
-Sincronizzare il tutto. Non penso convenga fare Pose Estimation da WebCAM, potremmo comunque trovare delle applicazioni utili (Tipo registrare le pose)
-Da valutare anche fattore di equilibrio. 
