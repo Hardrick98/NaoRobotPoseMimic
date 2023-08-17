@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="nao_trajectory" type="command_trajectory.py" name="nao_move_node" output="screen"/>
-</launch>
