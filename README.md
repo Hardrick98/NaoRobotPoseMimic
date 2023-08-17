@@ -21,3 +21,4 @@ roslaunch nao_trajectory trajectory.launch
 
 ### Fare il tutto in RealTime con WebCam
 ### Risolvere Problema Controllo
+### Eventualmente Aggiungere Orientamento Mano
