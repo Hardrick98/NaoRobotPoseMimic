@@ -1,10 +1,6 @@
 # NaoRobotPoseMimic
 
-Devo ancora aggiornare la cartella del Robot. Devo anche caricare il file Istruzioni qui.
-
-## Link per VideoPose3D
-
-https://github.com/facebookresearch/VideoPose3D
+Per eseguire il codice assicurarsi di avere una webcam funzionante. 
 
 ## 1. Attivare La Simulazione su Gazebo
 
@@ -17,8 +13,9 @@ roslaunch nao_moveit_config demo_gazebo.launch
 ```
 roslaunch pose_estimation pose.launch
 ```
+Il sistema di Posa3D riprende e adatta lo splendido lavoro fatto da https://github.com/facebookresearch/VideoPose3D
 
-## 3. Attivare Computazione Traiettoria 
+## 3. Attivare Computazione Traiettoria (In questo momento solo del braccio destro)
 
 ```
 roslaunch nao_trajectory trajectory.launch
@@ -29,3 +26,4 @@ roslaunch nao_trajectory trajectory.launch
 ### Ricalibrare Sistema di Riferimento
 ### Risolvere Problema Controllo
 ### Eventualmente Aggiungere Orientamento Mano
+### Eventualmente aggiungere posizione del braccio
