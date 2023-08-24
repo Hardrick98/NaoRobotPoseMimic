@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="pose_estimation" type="union.py" name="pose3d_publisher" output="screen"/>
+</launch>
