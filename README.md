@@ -15,7 +15,7 @@ roslaunch pose_estimation pose.launch
 ```
 Il sistema di Posa3D riprende e adatta lo splendido lavoro fatto da https://github.com/facebookresearch/VideoPose3D
 
-## 3. Attivare Computazione Traiettoria (In questo momento solo del braccio destro)
+## 3. Attivare Computazione Traiettoria (In questo momento solo del braccio sinistro)
 
 ```
 roslaunch nao_trajectory trajectory.launch
