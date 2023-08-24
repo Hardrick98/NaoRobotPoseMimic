@@ -6,12 +6,19 @@ Devo ancora aggiornare la cartella del Robot. Devo anche caricare il file Istruz
 
 https://github.com/facebookresearch/VideoPose3D
 
-## Per Attivare La Simulazione
+## 1. Attivare La Simulazione su Gazebo
+
 ```
 roslaunch nao_moveit_config demo_gazebo.launch
 ```
-## Per comandare braccio destro e sinistro tramite video 
-ATTENZIONE! Deve essere presente il file joint.npy nella cartella VideoPose3D
+
+## 2. Attivare la stima della Posa 3D con Webcam 
+
+```
+roslaunch pose_estimation pose.launch
+```
+
+## 3. Attivare Computazione Traiettoria 
 
 ```
 roslaunch nao_trajectory trajectory.launch
@@ -19,6 +26,6 @@ roslaunch nao_trajectory trajectory.launch
 
 ## PROSSIMI STEP
 
-### Fare il tutto in RealTime con WebCam
+### Ricalibrare Sistema di Riferimento
 ### Risolvere Problema Controllo
 ### Eventualmente Aggiungere Orientamento Mano
