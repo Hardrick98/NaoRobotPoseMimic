@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="nao_trajectory" type="right_arm.py" name="rarm_move_node" output="screen"/>
+</launch>
